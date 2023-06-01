@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cakey.controleur.Controleur">
+    <top>
+        <Label text="Label" BorderPane.alignment="CENTER" />
+    </top>
+    <bottom>
+        <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+    </bottom>
+    <right>
+        <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+             <Button fx:id="ajouterTour" text="Ajouter Tour" onMouseClicked="#ajouterTour"></Button>
+<!--            <Button id="boutonTour" mnemonicParsing="false" text="tour" textAlignment="CENTER" textFill="#030303" wrapText="true" onAction="#unTour" />-->
+         </children></VBox>
+    </right>
+   <center>
+      <Pane fx:id="panneauDeJeu" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+             <TilePane fx:id="tilepane" maxWidth="275" prefColumns="17" prefHeight="275.0" prefWidth="275.0" BorderPane.alignment="CENTER" />
+         </children>
+      </Pane>
+   </center>
+</BorderPane>
